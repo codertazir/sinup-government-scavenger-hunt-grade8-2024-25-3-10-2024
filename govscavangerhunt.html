@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End of an Era: Last Coal-Fired Power Plant Shuts Down</title>
+    <style>
+        body {
+            background-color: black; /* Black background */
+            color: white; /* White text */
+            font-family: 'Times New Roman', serif; /* Times New Roman font */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            animation: slideFadeIn 1.5s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 800px;
+            line-height: 1.8;
+            margin: 10px 20px;
+            text-align: justify;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        a {
+            color: white; /* White color for links */
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+            color: #ff6600; /* Add color change on hover */
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 1.5em;
+            animation: fadeInScale 1s ease-in-out;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-top: 1em;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        /* Card animations */
+        .card {
+            background-color: #111; /* Dark background for cards */
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+            max-width: 600px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px); /* Start with cards pushed down */
+            animation: slideUpFadeIn 1s ease-in-out forwards;
+            animation-delay: 0.8s;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            background-color: #333;
+            text-align: center;
+            color: white;
+            width: 100%;
+            animation: pulse 2s infinite; /* Pulse animation for the footer */
+        }
+
+        .footer-text {
+            font-style: italic;
+        }
+
+        /* Animation for fade in */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Animation for sliding up and fading in */
+        @keyframes slideUpFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px); /* Start from below */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* End at normal position */
+            }
+        }
+
+        /* Animation for sliding and fading the header */
+        @keyframes slideFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px); /* Slide down into view */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation for scaling and fading the subheading */
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Pulse animation for the footer text */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            p, h2, h3 {
+                font-size: 1.1em;
+            }
+            .card {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>End of an Era: Last Coal-Fired Power Plant Shuts Down</h1>
+    <p>
+        Britain’s last coal power plant at Ratcliffe-on-Soar in Nottinghamshire has closed down for good. This marks the end of the UK's long history with coal, which started 142 years ago. The government decided to shut it down to help the environment and fight climate change. Many people are happy about this change because it means cleaner air, but some workers are worried about losing their jobs.
+    </p>
+    <p>
+        <a href="https://www.theguardian.com/business/2024/sep/30/end-of-an-era-as-britains-last-coal-fired-power-plant-shuts-down">Read the full article here</a>
+    </p>
+
+    <h2>Questions</h2>
+
+    <div class="card">
+        <h3>What form of government does this country have?</h3>
+        <p>
+            The United Kingdom is a constitutional monarchy and parliamentary democracy. This means they have a king or queen, but the elected Parliament makes the important decisions.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>How is the government's decision shaping the lives of its citizens?</h3>
+        <p>
+            The decision to close the coal plant is changing citizens' lives by helping to create a cleaner environment. However, it also means that many workers at the plant will have to find new jobs. The government is trying to help these workers transition to new careers.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Do you think the citizens' responses to the decision are influenced by the type of government?</h3>
+        <p>
+            Yes, the citizens’ responses are influenced by the UK’s democratic government. In a democracy, people can express their opinions and influence decisions. Some citizens support the closure for environmental reasons, while others are concerned about job losses.
+        </p>
+    </div>
+
+    <footer>
+        <span class="footer-text">Created and Written by Muntazir</span>
+    </footer>
+
+</body>
+</html>
